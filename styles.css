@@ -1,0 +1,63 @@
+.bigwords {
+    color: #00adb5;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    background-color: #eeeeee;
+    margin-bottom: 4rem;
+    padding: 5rem;
+
+}
+
+.bo {
+
+    background-color: #222831;
+    color: #00adb5;
+}
+
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.section:hover {
+    background-color: #eeeeee;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.coolbackground {
+
+    background-color: #eeeeee;
+    text-align: left;
+    display: block
+}
+
+.idek {
+    text-align: center;
+
+}
+
+.egg {
+    text-align: left;
+    color: #222831;
+}
+
+.cow {
+    text-align: center;
+    color: #00adb5;
+}
+
+.lesssgo {
+
+    color: #222831;
+}
+
+.grad {
+
+  background-image: repeating-radial-gradient(#eeeeee, #222831, #00adb5);
+}

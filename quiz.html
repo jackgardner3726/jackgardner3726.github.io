@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+
+        <title>Quiz!</title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let x = document.querySelectorAll('button');
+
+                for (let i = 0; i < x.length; i++){
+
+                    x[i].addEventListener('click', function() {
+                        if (x[i].classList.contains("2")){
+
+                            x[i].style.backgroundColor = "green";
+                        }
+                        else{
+
+                            x[i].style.backgroundColor = "red";
+                        }
+                    });
+                }
+            });
+
+        </script>
+
+    </head>
+    <body class ="bo">
+        <span class="coolbackground">
+            <a href="/index.html">Go Back</a>
+        </span>
+
+        <h1 class="bigwords">Quiz!</h1>
+
+
+        <div class="bo">
+            <h2 class="idek">Part 1: Multiple Choice </h2>
+            <div class="section">
+                <hr>
+                    <h4>What is my favorite Cereal?</h4>
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-secondary 1" type="button">Cinnamon Toast Crunch</button>
+                      <button class="btn btn-secondary 1" type="button">Frosted Flakes</button>
+                      <button class="btn btn-secondary 1" type="button">Honey Combs</button>
+                      <button class="btn btn-secondary 2" type="button">Captain Crunch</button>
+                    </div>
+
+            </div>
+             <div class="section">
+                <hr>
+                    <h4>What time do I get out of bed?</h4>
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-secondary 1" type="button">8:30</button>
+                      <button class="btn btn-secondary 1" type="button">7:10</button>
+                      <button class="btn btn-secondary 2" type="button">7:20</button>
+                      <button class="btn btn-secondary 1" type="button">6:50</button>
+                    </div>
+
+            </div>
+            <div class="section">
+                <hr>
+                    <h4>What sports do I play?</h4>
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-secondary 1" type="button">Tennis</button>
+                      <button class="btn btn-secondary 2" type="button">Lacrosse</button>
+                      <button class="btn btn-secondary 1" type="button">Basketball</button>
+                      <button class="btn btn-secondary 2" type="button">Hockey</button>
+                      <button class="btn btn-secondary 2" type="button">Soccer</button>
+                      <button class="btn btn-secondary 1" type="button">Football</button>
+                    </div>
+
+            </div>
+            <div class="section">
+                <hr>
+                    <h4>Where do I go in the summer?</h4>
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-secondary 1" type="button">Nantucket</button>
+                      <button class="btn btn-secondary 1" type="button">New Hampton</button>
+                      <button class="btn btn-secondary 1" type="button">I stay home</button>
+                      <button class="btn btn-secondary 2" type="button">Marthas Vineyard</button>
+                      <button class="btn btn-secondary 1" type="button">Maine</button>
+                    </div>
+
+            </div>
+            <div class="section">
+                <hr>
+                    <h4>What is my favorite flavor of icecream?</h4>
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-secondary 2" type="button">Mint Chip</button>
+                      <button class="btn btn-secondary 1" type="button">Moose Tracks</button>
+                      <button class="btn btn-secondary 1" type="button">Cotton Candy</button>
+                      <button class="btn btn-secondary 1" type="button">Cherry Garcia</button>
+                      <button class="btn btn-secondary 1" type="button">Oreo</button>
+                    </div>
+
+            </div>
+            <div class="section">
+                <hr>
+                    <h4>How many siblings do I have?</h4>
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-secondary 1" type="button">0</button>
+                      <button class="btn btn-secondary 1" type="button">1</button>
+                      <button class="btn btn-secondary 2" type="button">2</button>
+                      <button class="btn btn-secondary 1" type="button">3</button>
+                    </div>
+
+            </div>
+            <div class="section">
+                <hr>
+                    <h4>What is my favorite meal?</h4>
+                    <div class="d-grid gap-2 d-md-block">
+                        <button class="btn btn-secondary 1" type="button">Cereal</button>
+                        <button class="btn btn-secondary 2" type="button">Steak and potatoes</button>
+                        <button class="btn btn-secondary 1" type="button">baked beans</button>
+                        <button class="btn btn-secondary 1" type="button">escargot</button>
+                        <button class="btn btn-secondary 1" type="button">dry dog food</button>
+                        <button class="btn btn-secondary 1" type="button">bone marrow</button>
+                        <button class="btn btn-secondary 1" type="button">just straight grass</button>
+                        <button class="btn btn-secondary 1" type="button">glass</button>
+                        <button class="btn btn-secondary 1" type="button">enchiladas</button>
+                        <button class="btn btn-secondary 1" type="button">cookies</button>
+                    </div>
+
+            </div>
+        </div>
+    </body>
+</html>
