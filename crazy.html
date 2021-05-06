@@ -12,22 +12,26 @@
 
     <title>Crazy</title>
     <script>
+      function blink()
+      {
+        let body = document.querySelector('body');
+        let rancolor = Math.floor(Math.random()*16777215).toString(16);
+        if (body.style.backgroundColor == "#" + rancolor)
+        {
+          body.style.backgroundColor = 'white';
+        }
+        else
+        {
+          body.style.backgroundColor = "#" + rancolor;
+        }
+      }
+
+
+
       document.addEventListener('DOMContentLoaded', function() {
-          let x = document.querySelectorAll('button');
-
-          for (let i = 0; i < x.length; i++){
-
-              x[i].addEventListener('click', function() {
-                  if (x[i].id == 2){
-
-                      document.body.style.backgroundColor = "green";
-                  }
-                  else{
-
-                      document.body.style.backgroundColor = "red";
-                  }
-              });
-          }
+        document.querySelector('#a1').addEventListener('click', function() {
+          window.setInterval(blink, 100);
+        });
       });
 
         </script>
@@ -36,8 +40,7 @@
     <a class="btn btn-secondary" href="/index.html" role="button">Go Back</a>
     <div class="idek">
         <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-dark" type="button" id="1">Flash</button>
-          <button class="btn btn-dark" type="button" id="2">Random Colors</button>
+          <button class="btn btn-dark" type="button" id="a1">Flash</button>
 
         </div>
     </div>
