@@ -14,12 +14,15 @@
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.egg').addEventListener('click', function() {
         document.querySelector('.egg').style.color = "white";
+        document.querySelector('#coolbeans').classList.remove('invis');
       });
       let top = Math.floor(Math.random() * 500);
       let left = Math.floor(Math.random() * 1150);
-      let right = 1250 - left;
+      let right = 1150 - left;
       document.querySelector(".egg").style.margin = top + "px " + right + "px 0px " + left + "px";
       // the top margin will be 50px, right margin will be 10px, bottom margin will be 20px, left margin will be 30px
+
+
     });
 
     </script>
@@ -29,6 +32,12 @@
   <body class="bo">
     <a class="btn btn-secondary" href="/index.html" role="button">Go Back</a>
     <h1 class="cow">Click To Find The Egg</h1>
+      <div class="invis" id="coolbeans">
+        <h2 class="idek" style="color: white;">YOU FOUND THE EGG!</h2>
+        <div class="idek">
+          <a class="btn btn-secondary" href="/egg.html" role="button">Play Again?</a>
+        </div>
+      </div>
       <div class="egg">
         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-egg-fill" viewBox="0 0 16 16">
           <path d="M14 10a6 6 0 0 1-12 0C2 5.686 5 0 8 0s6 5.686 6 10z"/>
