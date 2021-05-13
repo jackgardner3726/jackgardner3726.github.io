@@ -15,6 +15,7 @@
       function blink()
       {
         let body = document.querySelector('body');
+        //get a random color
         let rancolor = Math.floor(Math.random()*16777215).toString(16);
         if (body.style.backgroundColor == "#" + rancolor)
         {
@@ -30,6 +31,7 @@
 
       document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('#a1').addEventListener('click', function() {
+          //used Malan's code for the blink
           window.setInterval(blink, 100);
         });
       });
