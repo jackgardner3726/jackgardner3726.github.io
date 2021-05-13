@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('.egg').addEventListener('click', function() {
+        document.querySelector('.egg').style.color = "white";
+        document.querySelector('#coolbeans').classList.remove('invis');
+      });
+      let top = Math.floor(Math.random() * 500);
+      let left = Math.floor(Math.random() * 1150);
+      let right = 1150 - left;
+      document.querySelector(".egg").style.margin = top + "px " + right + "px 0px " + left + "px";
+      // the top margin will be 50px, right margin will be 10px, bottom margin will be 20px, left margin will be 30px
+
+
+    });
+
+    </script>
+
+    <title>Egg</title>
+  </head>
+  <body class="bo">
+    <a class="btn btn-secondary" href="/index.html" role="button">Go Back</a>
+    <h1 class="cow">Click To Find The Egg</h1>
+      <div class="invis" id="coolbeans">
+        <h2 class="idek" style="color: white;">YOU FOUND THE EGG!</h2>
+        <div class="idek">
+          <a class="btn btn-secondary" href="/egg.html" role="button">Play Again?</a>
+        </div>
+      </div>
+      <div class="egg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-egg-fill" viewBox="0 0 16 16">
+          <path d="M14 10a6 6 0 0 1-12 0C2 5.686 5 0 8 0s6 5.686 6 10z"/>
+        </svg>
+      </div>
+  </body>
+</html>
