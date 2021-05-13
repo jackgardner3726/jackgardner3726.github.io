@@ -61,3 +61,7 @@
 
   background-image: repeating-radial-gradient(#eeeeee, #222831, #00adb5);
 }
+
+.invis {
+    visibility: hidden;
+}
