@@ -12,17 +12,18 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
+      //eventlistener for the click
       document.querySelector('.egg').addEventListener('click', function() {
+        //change the egg to white
         document.querySelector('.egg').style.color = "white";
+        //remove the invisible class on cool beans
         document.querySelector('#coolbeans').classList.remove('invis');
       });
+      //find a random postition for the egg using margins
       let top = Math.floor(Math.random() * 500);
       let left = Math.floor(Math.random() * 1150);
       let right = 1150 - left;
       document.querySelector(".egg").style.margin = top + "px " + right + "px 0px " + left + "px";
-      // the top margin will be 50px, right margin will be 10px, bottom margin will be 20px, left margin will be 30px
-
-
     });
 
     </script>
